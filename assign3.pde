@@ -8,7 +8,7 @@ final int START_BUTTON_X = 248;
 final int START_BUTTON_Y = 360;
 
 PImage title, gameover, startNormal, startHovered, restartNormal, restartHovered;
-PImage bg, soil8x24;
+PImage bg,soil1,soil2,soil3,soil4;
 
 // For debug function; DO NOT edit or remove this!
 int playerHealth = 0;
@@ -25,7 +25,10 @@ void setup() {
 	startHovered = loadImage("img/startHovered.png");
 	restartNormal = loadImage("img/restartNormal.png");
 	restartHovered = loadImage("img/restartHovered.png");
-	soil8x24 = loadImage("img/soil8x24.png");
+	soil1 = loadImage("img/soil0.png");
+  soil2 = loadImage("img/soil1.png");
+  soil3 = loadImage("img/soil2.png");
+  soil4 = loadImage("img/soil3.png");
 }
 
 void draw() {
@@ -82,7 +85,41 @@ void draw() {
 		rect(0, 160 - GRASS_HEIGHT, width, GRASS_HEIGHT);
 
 		// Soil - REPLACE THIS PART WITH YOUR LOOP CODE!
-		image(soil8x24, 0, 160);
+		image(soil1, 0, 160);
+    image(soil1, 80, 160);
+    image(soil1, 160, 160);
+    image(soil1, 240, 160);
+    image(soil1, 320, 160);
+    image(soil1, 400, 160);
+    image(soil1, 480, 160);
+    image(soil1, 560, 160);
+    
+    image(soil2, 0, 240);
+    image(soil2, 80, 240);
+    image(soil2, 160, 240);
+    image(soil2, 240, 240);
+    image(soil2, 320, 240);
+    image(soil2, 400, 240);
+    image(soil2, 480, 240);
+    image(soil2, 560, 240);
+    
+    image(soil3, 0, 320);
+    image(soil3, 80, 320);
+    image(soil3, 160, 320);
+    image(soil3, 240, 320);
+    image(soil3, 320, 320);
+    image(soil3, 400, 320);
+    image(soil3, 480, 320);
+    image(soil3, 560, 320);
+    
+    image(soil4, 0, 400);
+    image(soil4, 80, 400);
+    image(soil4, 160, 400);
+    image(soil4, 240, 400);
+    image(soil4, 320, 400);
+    image(soil4, 400, 400);
+    image(soil4, 480, 400);
+    image(soil4, 560, 400);
 
 		// Player
 
